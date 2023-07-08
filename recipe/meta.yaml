@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -23,9 +23,11 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - anndata
+    - anndata       # [py>37]
+    - anndata <0.9  # [py<=37]
     - attrs >=22.1
-    - numba
+    - numba >=0.57 # [py>37]
+    - numba <0.5.7 # [py<=37]
     - numpy >=1.21
     - pandas
     - pyarrow
