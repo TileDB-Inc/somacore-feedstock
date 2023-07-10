@@ -27,7 +27,7 @@ requirements:
     - anndata <0.9  # [py<=37]
     - attrs >=22.1
     - numba >=0.57 # [py>37]
-    - numba <0.5.7 # [py<=37]
+    - numba <0.57 # [py<=37]
     - numpy >=1.21
     - pandas
     - pyarrow
