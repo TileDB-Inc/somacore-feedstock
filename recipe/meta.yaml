@@ -1,5 +1,5 @@
 {% set name = "somacore" %}
-{% set version = "1.0.14" %}
+{% set version = "1.1.0a1" %}
 
 package:
   name: {{ name|lower }}
@@ -9,8 +9,10 @@ package:
 # wget 'https://pypi.io/packages/source/s/somacore/somacore-i.j.k.tar.gz'
 # shasum -a 256 somacore-i.j.k.tar.gz
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/somacore-{{ version }}.tar.gz
-  sha256: cb950f5eeb0400f00f93d537fc54f440d05b70ad19aaf530e0e834730188c55a
+  git_url: https://github.com/single-cell-data/soma.git
+  git_rev: "spatial"
+  #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/somacore-{{ version }}.tar.gz
+  #sha256: cb950f5eeb0400f00f93d537fc54f440d05b70ad19aaf530e0e834730188c55a
 
 build:
   noarch: python
@@ -34,6 +36,7 @@ requirements:
     - pyarrow
     - pyarrow-hotfix
     - scipy
+    - shapely
     - typing-extensions >=4.1 # For LiteralString
 # See also https://github.com/single-cell-data/SOMA/blob/VERSION-GOES-HERE/pyproject.toml
 
