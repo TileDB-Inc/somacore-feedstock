@@ -1,5 +1,5 @@
 {% set name = "somacore" %}
-{% set version = "1.0.29" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -54,9 +54,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - Shelnutt2
-    - nguyenv
-    - thetorpedodog
-    - johnkerl
     - jdblischak
     - jp-dark
