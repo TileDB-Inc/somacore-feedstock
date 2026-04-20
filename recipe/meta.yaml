@@ -10,7 +10,7 @@ package:
 # shasum -a 256 somacore-i.j.k.tar.gz
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/somacore-{{ version }}.tar.gz
-  sha256: 8d0517a4d272fa532bd1d13f69d69617abc829adfab24693c38525751464ff8c
+  sha256: 4790225b0acd36806f87963a83c93dd6d6542801a7131504fc4d5503ace10517
 
 
 build:
