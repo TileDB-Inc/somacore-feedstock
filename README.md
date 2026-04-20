@@ -13,11 +13,10 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/TileDB-Inc/CI/_build/latest?definitionId=47&branchName=main">
-        <img src="https://dev.azure.com/TileDB-Inc/CI/_apis/build/status/somacore-feedstock?branchName=main">
-      </a>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
     </td>
   </tr>
 </table>
@@ -91,7 +90,7 @@ merged, the recipe will be re-built and uploaded automatically to the
 everybody to install and use from the `tiledb` channel.
 Note that all branches in the TileDB-Inc/somacore-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
-on branches in forks and branches in the main repository should only be used to
+on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
@@ -104,10 +103,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@Shelnutt2](https://github.com/Shelnutt2/)
 * [@jdblischak](https://github.com/jdblischak/)
-* [@johnkerl](https://github.com/johnkerl/)
 * [@jp-dark](https://github.com/jp-dark/)
-* [@nguyenv](https://github.com/nguyenv/)
-* [@thetorpedodog](https://github.com/thetorpedodog/)
 
